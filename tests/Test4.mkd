@@ -1,0 +1,8 @@
+#DOCUMENT BEGIN
+		#PARAGRAPH BEGIN
+			So far, this is a legal document
+			#STUFF BEGIN
+				Oh no its not legal anymore 
+			#STUFF END
+		#PARAGRAPH END
+#DOCUMENT END	

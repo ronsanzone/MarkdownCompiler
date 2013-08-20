@@ -1,0 +1,11 @@
+#DOCUMENT BEGIN
+	#DEFINE BEGIN #NAME myname #VALUE Josh #DEFINE END
+	Hi my name is #USE BEGIN myname #USE END
+		
+	#PARAGRAPH BEGIN
+		#DEFINE BEGIN #NAME myname #VALUE Jon #DEFINE END
+			Inside the paragraph block my name is #USE BEGIN myname #USE END
+	#PARAGRAPH END
+	
+	Now my name is #USE BEGIN myname #USE END again
+#DOCUMENT END

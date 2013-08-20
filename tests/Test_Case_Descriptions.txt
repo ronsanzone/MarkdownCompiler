@@ -1,0 +1,54 @@
+Test cases will be graded as follows:
+	2 points for correct output
+	1-2 points for mostly correct output
+	0-1 points for partially correct output
+	0 points for no output / can not run
+
+Test1.txt
+A simple test case with a .txt extenstion to test that your
+compiler only accepts .mkd files.
+
+Test2.mkd
+A simple test case containing only markdown annotations (i.e., 
+no macro tags) to test that the compiler works properly for a
+simple case.  
+
+Test3.mkd
+A simple test case containing only markdown annotations (i.e., 
+no macro tags) in lower case to test that the compiler is not 
+case sensitive. 	 
+
+Test4.mkd
+A simple test case containing invalid markdown annotations to
+test that the lexical analzyer recognizes unknown lexemes and
+reports them as lexical errors. 
+
+Test5.mkd
+A simple test case containing a single, defined macro tag to 
+test that the compiler works properly for a macro in a 
+simple case. Taken from example in project handout. 
+
+Test6.mkd
+A simple test case containing a single, undefined macro tag to 
+test that the compiler detects the use of an uknown macro. Should
+report a static semantic error.  
+
+Test7.mkd
+A test case to test the scoping of a macro tag. Taken from the
+suggested test cases in the project handout. 
+
+Test8.mkd 
+A test case to ensure if there are annotations after #DOCUMENT END 
+are reported as syntax errors.
+
+Test9.mkd
+A test case using multiple macro definition and use tags to 
+ensure that the parser can handle multiple macros.
+
+Test10.mkd
+A test case with legal annotations not following the grammar to
+test that the parser is enforcing the grammar rules. Should
+report a syntax error. 
+
+
+

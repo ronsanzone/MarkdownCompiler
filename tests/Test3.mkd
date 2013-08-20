@@ -1,0 +1,12 @@
+#document begin
+		#paragraph begin
+			The members of the #bold begin Simpson #bold end family are:
+			#list begin
+				#item begin Homer Simpson #item end
+				#item begin Marge Simpson #item end
+				#item begin Bart Simpson #item end
+				#item begin Lisa Simpson #item end
+				#item begin Maggie Simpson #item end
+			#list end
+		#paragraph end
+#document end
