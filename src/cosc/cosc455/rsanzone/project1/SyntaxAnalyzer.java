@@ -19,7 +19,7 @@ public class SyntaxAnalyzer {
         Compiler.tree.setRoot(rootNode);
     }
 
-    public ParseNode document() {
+    ParseNode document() {
         ParseNode node = new ParseNode(NodeType.DOCUMENT);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.DOCUMENT_BEGIN) {
@@ -43,7 +43,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode head() {
+    ParseNode head() {
         ParseNode node = new ParseNode(NodeType.HEAD);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.HEAD_BEGIN) {
@@ -69,7 +69,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode title() {
+    ParseNode title() {
         ParseNode node = new ParseNode(NodeType.TITLE);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.TITLE_BEGIN) {
@@ -92,7 +92,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode body() {
+    ParseNode body() {
         ParseNode node = new ParseNode(NodeType.BODY);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.USE_BEGIN) {
@@ -125,7 +125,7 @@ public class SyntaxAnalyzer {
 
     }
 
-    public ParseNode paragraph() {
+    ParseNode paragraph() {
         ParseNode node = new ParseNode(NodeType.PARAGRAPH);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.PARAGRAPH_BEGIN) {
@@ -145,7 +145,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode innerParagraph() {
+    ParseNode innerParagraph() {
         ParseNode node = new ParseNode(NodeType.INNER_PARAGRAPH);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.USE_BEGIN) {
@@ -170,7 +170,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode innerText() {
+    ParseNode innerText() {
         ParseNode node = new ParseNode(NodeType.INNER_PARAGRAPH);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.USE_BEGIN) {
@@ -188,7 +188,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode macroDefine() {
+    ParseNode macroDefine() {
         ParseNode node = new ParseNode(NodeType.OUTER_DEFINE);
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.DEFINE_BEGIN) {
             node.addChild(innerMacroDefine());
@@ -200,7 +200,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode innerMacroDefine() {
+    ParseNode innerMacroDefine() {
         ParseNode node = new ParseNode(NodeType.DEFINE);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.DEFINE_BEGIN) {
@@ -238,7 +238,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode macroUse() {
+    ParseNode macroUse() {
         ParseNode node = new ParseNode(NodeType.USE);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.USE_BEGIN) {
@@ -259,7 +259,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode bold() {
+    ParseNode bold() {
         ParseNode node = new ParseNode(NodeType.BOLD);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.BOLD_BEGIN) {
@@ -280,7 +280,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode italics() {
+    ParseNode italics() {
         ParseNode node = new ParseNode(NodeType.ITALICS);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.ITALICS_BEGIN) {
@@ -340,7 +340,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode list() {
+    ParseNode list() {
         ParseNode node = new ParseNode(NodeType.LIST);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.LIST_BEGIN) {
@@ -377,7 +377,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode listItems() {
+    ParseNode listItems() {
         ParseNode node = new ParseNode(NodeType.LIST_ITEMS);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.ITEM_BEGIN) {
@@ -406,7 +406,7 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode innerList() {
+    ParseNode innerList() {
         ParseNode node = new ParseNode(NodeType.INNER_LIST);
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.BOLD_BEGIN) {
@@ -435,12 +435,12 @@ public class SyntaxAnalyzer {
         return node;
     }
 
-    public ParseNode text() {
+    ParseNode text() {
         ParseNode node;
 
         if (Compiler.nextToken.getTokenType() == Tokens.TokenType.PLAIN_TEXT) {
             //construct a node that contains the plain text data
-            node = new ParseNode(NodeType.PLAIN_TEXT, Compiler.nextToken.getTokenValue());
+            node = new ParseNode(Compiler.nextToken.getTokenValue());
             //advance lexer
             Compiler.lexer.lex();
             return node;
