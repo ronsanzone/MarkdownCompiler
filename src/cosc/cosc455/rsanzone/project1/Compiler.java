@@ -14,43 +14,26 @@ import java.util.Scanner;
  * <p>Reads in a .mkd file written in the markdown language and compiles it to html code</p>
  *
  * @author Ronald Sanzone
- * @course COSC 455
- * @project 1
- * 
  */
 public class Compiler {
 	
-	/** The next token that is found by the lexer. */
 	public static Tokens.TagObject nextToken;
 	
-	/** The lexical analyzer. */
 	public static LexicalAnalyzer lexer;
 	
-	/** The syntax analyzer. */
 	public static SyntaxAnalyzer syntax = new SyntaxAnalyzer();
 	
-	/** The parse tree that the syntax analyzer generates */
 	public static ParseTree tree = new ParseTree();
 	
-	/** The semantic analyzer. */
 	public static SemanticAnalyzer semant;
-	
-	/** The html string that is written to a file. */
-	public static String htmlString = new String();
-	
-	/**
-	 * <p>The main method.</p>
-	 * <p>Takes in a file name via command line argument. Reads the file to a string
-	 * and sends it through the three analyzers. In the end a string of compiled html code
-	 * is written to a file.</p>
-	 * 
-	 *
-	 * @param args filename
-	 */
-	public static void main(String[] args) {
-		String inFileName = new String();
-		String outFileName = new String();
-		//check to make sure there is only one arg
+
+    public static String htmlString = "";
+
+
+    public static void main(String[] args) {
+        String inFileName = "";
+        String outFileName = "";
+        //check to make sure there is only one arg
 		if(args.length == 1){
 			//test for .mkd
 			if(isMkdFileName(args[0])){
@@ -79,28 +62,14 @@ public class Compiler {
 		writeFile(outFileName);		
 	}
 	
-	/**
-	 * Checks if given file name ends in ".mkd".
-	 *
-	 * @param filename the filename
-	 * @return true, if is filename ends in ".mkd"
-	 */
 	private static boolean isMkdFileName(String filename){
 		return filename.endsWith(".mkd");
 	}
 	
-	/**
-	 * Shows useage a basic useage message if the command line arguments are incorrect.
-	 */
 	private static void showUseage(){
 		System.out.println("Compiler Useage: java -jar Compiler <filemane.mkd>");
 	}
 	
-	/**
-	 * Writes the htmlString to a file.
-	 *
-	 * @param filename the filename
-	 */
 	private static void writeFile(String filename){
 		try{
 			FileWriter filestream = new FileWriter(filename);
@@ -113,13 +82,6 @@ public class Compiler {
 		}
 	}
 	
-	/**
-	 * Reads the given filename into a string.
-	 *
-	 * @param pathname the pathname
-	 * @return the string containing file data
-	 * @throws IOException Signals that an I/O exception has occurred.
-	 */
 	private static String readFile(String pathname) throws IOException {
 		File file = new File(pathname);
 		StringBuilder fileContents = new StringBuilder((int)file.length());
@@ -134,19 +96,11 @@ public class Compiler {
 		} finally {		
 			scanner.close();
 		}
-		
 	}
 	
-	/**
-	 * The Class WrongFileNameException is used a an error generator if the given filename 
-	 * does not end in the proper file extension.
-	 */
 	@SuppressWarnings("serial")
 	public static class WrongFileNameException extends RuntimeException {
 		
-		/**
-		 * Instantiates a new error message.
-		 */
 		public WrongFileNameException(){
 			super("File Name Error: File must have .mkd extension");
 		}
