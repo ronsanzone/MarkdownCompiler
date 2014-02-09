@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6036faba-d57a-4f51-a1fd-bec71f63be34" name="Default" comment="Remove Unnecessary Comments">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Compiler.java" afterPath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Compiler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/LexicalAnalyzer.java" afterPath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/LexicalAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/ParseTree.java" afterPath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/ParseTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SemanticAnalyzer.java" afterPath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SemanticAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SyntaxAnalyzer.java" afterPath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SyntaxAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Tokens.java" afterPath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Tokens.java" />
+    <list default="true" id="6036faba-d57a-4f51-a1fd-bec71f63be34" name="Default" comment="Fix small performance issues&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/FileManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Compiler.java" afterPath="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Compiler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/LexicalAnalyzer.java" afterPath="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/LexicalAnalyzer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/ParseTree.java" afterPath="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/ParseTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SemanticAnalyzer.java" afterPath="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SemanticAnalyzer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SyntaxAnalyzer.java" afterPath="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SyntaxAnalyzer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Tokens.java" afterPath="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Tokens.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Compiler.iws" />
@@ -73,129 +75,69 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Compiler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Compiler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Compiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="54" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.83653843" vertical-offset="1272" max-vertical-offset="1755">
+            <state line="46" column="0" selection-start="1414" selection-end="1418" vertical-scroll-proportion="0.9704641" vertical-offset="0" max-vertical-offset="1515">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2965#2992#0" expanded="true" />
+                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1651#1652#0" expanded="true" />
+                <element signature="e#1701#1702#0" expanded="true" />
+                <element signature="e#1743#1744#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LexicalAnalyzer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/LexicalAnalyzer.java">
+      <file leaf-file-name="FileManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="14" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="2685">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3894#3921#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseTree.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/ParseTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="4" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="3435">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1987#1988#0" expanded="true" />
-                <element signature="e#2028#2029#0" expanded="true" />
-                <element signature="e#2069#2070#0" expanded="true" />
-                <element signature="e#2110#2111#0" expanded="true" />
-                <element signature="e#2317#2318#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
-                <element signature="e#2424#2425#0" expanded="true" />
-                <element signature="e#2451#2452#0" expanded="true" />
-                <element signature="e#2494#2495#0" expanded="true" />
-                <element signature="e#2526#2527#0" expanded="true" />
-                <element signature="e#2609#2617#0" expanded="true" />
-                <element signature="e#5104#5105#0" expanded="true" />
-                <element signature="e#5139#5140#0" expanded="true" />
-                <element signature="e#5179#5180#0" expanded="true" />
-                <element signature="e#5216#5217#0" expanded="true" />
-                <element signature="e#5267#5268#0" expanded="true" />
-                <element signature="e#5311#5312#0" expanded="true" />
-                <element signature="e#5364#5365#0" expanded="true" />
-                <element signature="e#5403#5404#0" expanded="true" />
-                <element signature="e#5469#5470#0" expanded="true" />
-                <element signature="e#5517#5518#0" expanded="true" />
-                <element signature="e#5729#5730#0" expanded="true" />
-                <element signature="e#5770#5771#0" expanded="true" />
-                <element signature="e#5811#5812#0" expanded="true" />
-                <element signature="e#5853#5854#0" expanded="true" />
-                <element signature="e#6060#6061#0" expanded="true" />
-                <element signature="e#6097#6098#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="135" selection-start="184" selection-end="184" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+            <state line="8" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test9.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Test9.html">
+      <file leaf-file-name="LexicalAnalyzer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/LexicalAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="131" selection-start="189" selection-end="189" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
+            <state line="41" column="14" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="3180">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParseTree.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/ParseTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="4" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="3540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SemanticAnalyzer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SemanticAnalyzer.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SemanticAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="515" column="30" selection-start="18186" selection-end="18186" vertical-scroll-proportion="0.0" vertical-offset="7725" max-vertical-offset="8250">
+            <state line="583" column="30" selection-start="18684" selection-end="18684" vertical-scroll-proportion="0.0" vertical-offset="8745" max-vertical-offset="9345">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SyntaxAnalyzer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SyntaxAnalyzer.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SyntaxAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="14" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="7245">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#15203#15230#0" expanded="true" />
-                <element signature="e#15479#15506#0" expanded="true" />
-              </folding>
+            <state line="53" column="14" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="8880">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Tokens.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Tokens.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Tokens.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="9" selection-start="4402" selection-end="4402" vertical-scroll-proportion="0.0" vertical-offset="1737" max-vertical-offset="2460">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1705#1706#0" expanded="true" />
-                <element signature="e#1740#1741#0" expanded="true" />
-                <element signature="e#1777#1778#0" expanded="true" />
-                <element signature="e#2157#2165#0" expanded="true" />
-                <element signature="e#2535#2554#0" expanded="true" />
-                <element signature="e#2842#2853#0" expanded="true" />
-                <element signature="e#4357#4358#0" expanded="true" />
-                <element signature="e#4390#4391#0" expanded="true" />
-                <element signature="e#4455#4456#0" expanded="true" />
-                <element signature="e#4499#4500#0" expanded="true" />
-                <element signature="e#5044#5045#0" expanded="true" />
-                <element signature="e#5084#5085#0" expanded="true" />
-                <element signature="e#5125#5126#0" expanded="true" />
-                <element signature="e#5171#5172#0" expanded="true" />
-              </folding>
+            <state line="137" column="9" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="2760">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -224,6 +166,11 @@
         <option value="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Tokens.java" />
         <option value="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/ParseTree.java" />
         <option value="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Compiler.java" />
+        <option value="$PROJECT_DIR$/src/cosc/cosc455/rsanzone/markdown/Compiler.java" />
+        <option value="$PROJECT_DIR$/src/com/cosc455/rsanzone/markdown/Compiler.java" />
+        <option value="$PROJECT_DIR$/src/com/cosc455/markdown/markdown/Compiler.java" />
+        <option value="$PROJECT_DIR$/src/com/ronsanzone/markdown/markdown/Compiler.java" />
+        <option value="$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Compiler.java" />
       </list>
     </option>
   </component>
@@ -259,8 +206,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,7 +240,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project1" />
+              <option name="myItemId" value="compiler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,6 +257,11 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -473,36 +425,40 @@
       <created>1391913004284</created>
       <updated>1391913004284</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix small performance issues&#10;">
+      <created>1391913905057</created>
+      <updated>1391913905057</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1420" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58998644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37347767" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22183098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3991881" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37347767" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3991881" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -519,7 +475,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Remove Unnecessary Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove Unnecessary Comments" />
+    <MESSAGE value="Fix small performance issues&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix small performance issues&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -531,212 +488,239 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Compiler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Compiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
+        <state line="108" column="5" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1755">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2965#2992#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/LexicalAnalyzer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/LexicalAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4035">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3894#3921#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/ParseTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="6480">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2069#2070#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-            <element signature="e#2451#2452#0" expanded="true" />
-            <element signature="e#2494#2495#0" expanded="true" />
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2609#2617#0" expanded="true" />
-            <element signature="e#5104#5105#0" expanded="true" />
-            <element signature="e#5139#5140#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <element signature="e#5216#5217#0" expanded="true" />
-            <element signature="e#5267#5268#0" expanded="true" />
-            <element signature="e#5311#5312#0" expanded="true" />
-            <element signature="e#5364#5365#0" expanded="true" />
-            <element signature="e#5403#5404#0" expanded="true" />
-            <element signature="e#5469#5470#0" expanded="true" />
-            <element signature="e#5517#5518#0" expanded="true" />
-            <element signature="e#5729#5730#0" expanded="true" />
-            <element signature="e#5770#5771#0" expanded="true" />
-            <element signature="e#5811#5812#0" expanded="true" />
-            <element signature="e#5853#5854#0" expanded="true" />
-            <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6097#6098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SemanticAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13890">
+        <state line="38" column="14" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="2685">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SyntaxAnalyzer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/ParseTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="9420">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#15203#15230#0" expanded="true" />
-            <element signature="e#15479#15506#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Tokens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="132" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="4725">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#2157#2165#0" expanded="true" />
-            <element signature="e#2535#2554#0" expanded="true" />
-            <element signature="e#2842#2853#0" expanded="true" />
-            <element signature="e#4357#4358#0" expanded="true" />
-            <element signature="e#4390#4391#0" expanded="true" />
-            <element signature="e#4455#4456#0" expanded="true" />
-            <element signature="e#4499#4500#0" expanded="true" />
-            <element signature="e#5044#5045#0" expanded="true" />
-            <element signature="e#5084#5085#0" expanded="true" />
-            <element signature="e#5125#5126#0" expanded="true" />
-            <element signature="e#5171#5172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SemanticAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="515" column="30" selection-start="18186" selection-end="18186" vertical-scroll-proportion="0.0" vertical-offset="7725" max-vertical-offset="8250">
+        <state line="111" column="4" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="3435">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/LexicalAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="14" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="2685">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3894#3921#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/SyntaxAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="14" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="7245">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#15203#15230#0" expanded="true" />
-            <element signature="e#15479#15506#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Tokens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="9" selection-start="4402" selection-end="4402" vertical-scroll-proportion="0.0" vertical-offset="1737" max-vertical-offset="2460">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#2157#2165#0" expanded="true" />
-            <element signature="e#2535#2554#0" expanded="true" />
-            <element signature="e#2842#2853#0" expanded="true" />
-            <element signature="e#4357#4358#0" expanded="true" />
-            <element signature="e#4390#4391#0" expanded="true" />
-            <element signature="e#4455#4456#0" expanded="true" />
-            <element signature="e#4499#4500#0" expanded="true" />
-            <element signature="e#5044#5045#0" expanded="true" />
-            <element signature="e#5084#5085#0" expanded="true" />
-            <element signature="e#5125#5126#0" expanded="true" />
-            <element signature="e#5171#5172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/ParseTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="4" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="3435">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2069#2070#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-            <element signature="e#2451#2452#0" expanded="true" />
-            <element signature="e#2494#2495#0" expanded="true" />
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2609#2617#0" expanded="true" />
-            <element signature="e#5104#5105#0" expanded="true" />
-            <element signature="e#5139#5140#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <element signature="e#5216#5217#0" expanded="true" />
-            <element signature="e#5267#5268#0" expanded="true" />
-            <element signature="e#5311#5312#0" expanded="true" />
-            <element signature="e#5364#5365#0" expanded="true" />
-            <element signature="e#5403#5404#0" expanded="true" />
-            <element signature="e#5469#5470#0" expanded="true" />
-            <element signature="e#5517#5518#0" expanded="true" />
-            <element signature="e#5729#5730#0" expanded="true" />
-            <element signature="e#5770#5771#0" expanded="true" />
-            <element signature="e#5811#5812#0" expanded="true" />
-            <element signature="e#5853#5854#0" expanded="true" />
-            <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6097#6098#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="135" selection-start="184" selection-end="184" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+        <state line="1" column="135" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Test9.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="131" selection-start="189" selection-end="189" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
+        <state line="2" column="131" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cosc/cosc455/rsanzone/project1/Compiler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SemanticAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="54" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.83653843" vertical-offset="1272" max-vertical-offset="1755">
+        <state line="515" column="30" selection-start="18186" selection-end="18186" vertical-scroll-proportion="0.0" vertical-offset="7725" max-vertical-offset="8250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SyntaxAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="14" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Tokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="9" selection-start="4402" selection-end="4402" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Compiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="54" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.0" vertical-offset="1332" max-vertical-offset="1755">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2965#2992#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="14" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="2685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/ParseTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="4" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="3435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="135" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Test9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="131" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SemanticAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="515" column="30" selection-start="18186" selection-end="18186" vertical-scroll-proportion="0.0" vertical-offset="7725" max-vertical-offset="8250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SyntaxAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="14" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="7245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Tokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="9" selection-start="4402" selection-end="4402" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Compiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
+          <folding>
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/ParseTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="6480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SemanticAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SyntaxAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="9420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Tokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="132" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="4725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SemanticAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="583" column="30" selection-start="18684" selection-end="18684" vertical-scroll-proportion="0.0" vertical-offset="8745" max-vertical-offset="9345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="14" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="3180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/SyntaxAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="14" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="8880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Tokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="9" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="2760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Test9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="131" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="135" selection-start="184" selection-end="184" vertical-scroll-proportion="0.02183406" vertical-offset="0" max-vertical-offset="687">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/ParseTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="4" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="3540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ronsanzone/markdown/compiler/Compiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1414" selection-end="1418" vertical-scroll-proportion="0.9704641" vertical-offset="0" max-vertical-offset="1515">
+          <folding>
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
           </folding>
         </state>
       </provider>
